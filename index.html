@@ -7,22 +7,46 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css" integrity="sha384-Vkoo8x4CGsO3+Hhxv8T/Q5PaXtkKtu6ug5TOeNV6gBiFeWPGFN9MuhOf23Q9Ifjh" crossorigin="anonymous">
     <link href="https://fonts.googleapis.com/css2?family=Megrim&display=swap" rel="stylesheet">
     <link href= "index.css" rel="stylesheet"></link>
+    <title>AJAX with JavaScript</title>
+    <script>
+    
+    </script>
   </head>
   <body>
-
-    <div class="container">
+      <div class="container">
       <div class="jumbotron bg-dark text-white">
         <h1 class="display-4">City Weather</h1>
         <p class="lead">This is a simple weather app. Enter the name of the city and will get all the information about the city's weather</p>
         <hr class="my-4">
         <div class="input-group mb-3 container">
-          <input type="text" class="form-control" placeholder="City Name" name="city" id="city">
+            <div class="cityInput">
+              <input type="text" class="form-control" placeholder="City Name" name="city" id="city">
+            </div>
           <div class="input-group-append">
               <button class="btn btn-outline-info" type="button" id="search">Search</button>
           </div>
         </div>
       </div>
-      <div id="info"> </div>
+
+
+      
+    <div id="info">
+      <div>
+        <p>City: <span id="name"></span></p>
+        <p>Country: <span id="country"></span></p>
+        <p>Current Weather: <span id="weather"></span></p>
+      </div>
+    
+    
+      <table class="table table-dark">
+        <th scope="col">day</th>
+        <th scope="col">min</th>
+        <th scope="col">max</th>
+        <th scope="col">weather</th>
+        <tbody id="tbody">
+    
+        </tbody>
+      </table>
     </div>
     <script type="text/javascript" src="weather.js"></script>
   </body>
